@@ -6,7 +6,10 @@
     list-style: none;
     font-family: "Poppins", sans-serif;
   }
-  
+  html{
+      background-color: black;
+  }
+
   :root{
     --bg-color: #0f151a;
     --text-color: #ffffff;
