@@ -1,0 +1,344 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  :root{
+    --bg-color: #0f151a;
+    --text-color: #ffffff;
+    --main-color: #f53fa1;
+    --other-color: #00ecff;
+    --h1-font: 4.3rem;
+  }
+  
+  body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    height: 100%;
+    background:
+          radial-gradient(
+            93% 93% at 8% 128%,
+            rgb(0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.2) 60%,
+            rgba(11, 148, 227, 0) 100%
+          ),
+          radial-gradient(
+            49% 88% at 7% -14%,
+            rgba(0, 0, 0, 0.73) 0%,
+            rgba(3, 3, 3, 0.17) 60%,
+            rgba(93, 227, 236, 0) 100%
+          ),
+          radial-gradient(
+            115% 156% at 90% 89%,
+            rgb(0, 0, 0) 0%,
+            rgba(75, 254, 222, 0) 100%
+          ),
+          linear-gradient(
+            234deg,
+            rgb(0, 0, 0) 25%,
+            rgba(0, 0, 0, 0.77) 35%,
+            rgba(0, 0, 0, 0.4) 50%,
+            rgba(160, 33, 143, 0) 84%
+          ),
+          radial-gradient(
+            119% 119% at 3% 26%,
+            rgb(0, 0, 0) 0%,
+            rgba(29, 137, 209, 0) 74%
+          ),
+          linear-gradient(
+            360deg,
+            rgb(8, 165, 227) 20%,
+            rgb(0, 0, 0) 100%
+          );
+          background-repeat: no-repeat;
+          
+  }
+  header{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 30px 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    transition: all ease .55s;
+  }
+  .logo img{
+    width: 100%;
+    height: auto;
+  }
+  .navlist{
+    display: flex;
+  }
+  .navlist a{
+    font-size:15px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 0 30px;
+    transition: all ease .55s;
+  }
+  .navlist a:hover{
+    color: var(--other-color)
+  }
+  
+  .h-right a{
+    margin-right: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--other-color);
+    transition: all ease .55s;
+    }
+    .h-right a:hover{
+      color: var(--text-color);
+    }
+    #menu-icon{
+      font-size: 37px;
+      color: var(--main-color);
+      z-index: 10001;
+      cursor: pointer;
+      display: none;
+    }
+    section{
+        padding: 0 12% ;
+      
+      }
+      
+      .home{
+       
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-size:cover;
+        background-position: center;
+        gap: 30px;
+       
+        border: 0px solid rgba(100, 100, 100, 1);
+        
+      }
+        main{
+      height: 100%;
+    }
+
+    .container{
+      min-height: 100vh;
+      width: 100%;
+      height: 80%;
+      margin-top: 15%;
+    }
+      .service-wrapper{
+        padding: 5% 8%;
+      }
+      .service{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .header-detalii{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      h1{
+        color: #fff;
+        font-size: 5rem;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: transparent;
+        letter-spacing: 4px;
+        background-color:#0f151a;
+        background:linear-gradient(8deg,rgba(8,52,83,1) 15%, #f53fa1 41%,rgba(41,17,45,1)100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        text-align: center; 
+        margin-bottom: 20px;
+      }
+      h1::after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 10%;
+        height: 8px;
+        width: 80%;
+        border-radius: 8px;
+        background-color: rgba(228, 215, 215, 0.158);
+
+      }
+h1 span{
+  position: absolute;
+  top: 100%;
+  left:10%;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #f53fa1;
+  animation: anim 5s linear infinite;
+}
+
+@keyframes anim{
+  95%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    left: 88%;
+  }
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid: 30px;
+  margin-top: 80px;
+}
+
+.card{
+  height: 500px;
+  width: 390px;
+  margin: 5px;
+  background-color:#131a1f;
+  padding: 3% 8%;
+  border: 0.2px solid rgb(114, 226, 174, 0.2);
+  border-radius: 8px;
+  transition: .6s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.card::after{
+  content: "";
+  position: absolute;
+  top: 150%;
+  left: -200px;
+  width: 120%;
+  transform: rotate(50deg);
+  background-color: #fff;
+  height: 18px;
+  filter: blur(30px);
+  opacity: 0.5;
+  transition: 1s;
+}
+.card:hover:after{
+width: 225%;
+top: -100%;
+}
+
+.card i{
+color:#f53fa1;
+margin-top: 30px;
+margin-bottom: 20px;
+font-size: 4.8rem;
+}
+.card h2{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.card p{
+  text-align:center;
+  width: 100%;
+  margin: 12px 0;
+  color: rgb(255,255,255, 0.6);
+}
+
+.card:hover{
+  background-color: transparent;
+  transform: translateY(-8px);
+  border-color: #00ffea;
+
+}
+.card:hover i{
+  color: #00ffea;
+}
+
+    @media(max-width: 1820px){
+        header{
+          padding: 15px 7%;
+        }
+        section{
+          padding: 0 7%;
+        }
+      }
+      @media(max-width: 1610px){
+        :root{
+          --h1-font: 4.2rem;
+        }
+    }
+    @media(max-width: 1490px){
+        :root{
+          --h1-font: 3rem;
+        }
+    }
+    @media screen and (max-width:1200px) {
+      .cards{
+        
+        grid-template-columns: repeat(2,1fr);
+      
+      }
+      
+    }
+    @media screen and (max-width:900px) {
+      .cards{
+        
+        grid-template-columns: repeat(1,1fr);
+      }
+      h1{
+        font-size: 3.5rem;
+      }
+    }
+    @media(max-width: 950px){
+        .navlist a{
+          margin: 0 15px;
+        }
+      }
+    @media(max-width: 780px){
+        header{
+          padding: 13px 5%;
+        }
+        section{
+          padding: 60px 5%;
+        }
+        #menu-icon{
+          display: block;
+          font-size: 43px;
+        }
+        .navlist{
+          position: absolute;
+          width: 100%;
+          height: 100vh;
+          padding: 70px 50px;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 100%;
+          display: flex;
+          flex-direction: column;
+          backdrop-filter: blur(32px);
+          transition: all 0.5s ease-in-out;
+        }
+        .navlist a{
+          display: block;
+          padding: 0;
+          margin: 0px 0px 22px 0px;
+          font-size: 2rem;
+        }
+        .navlist.open{
+          left: 0;
+        }
+       
+      }
