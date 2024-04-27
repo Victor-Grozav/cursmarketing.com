@@ -144,9 +144,7 @@
       height: 80%;
       margin-top: 15%;
     }
-      .service-wrapper{
-        padding: 5% 8%;
-      }
+     
       .service{
         display: flex;
         flex-direction: column;
