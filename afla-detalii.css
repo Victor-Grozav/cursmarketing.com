@@ -80,6 +80,7 @@
   }
   .navlist{
     display: flex;
+      background-color: rgba(15, 21, 26, 0.8);
   }
   .navlist a{
     font-size:15px;
