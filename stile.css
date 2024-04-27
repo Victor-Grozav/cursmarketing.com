@@ -348,4 +348,9 @@ transition: all ease .55s;
     width: 400px;
     margin: 10px auto;
   }
+  .home{
+    display: flex;
+    flex-wrap:wrap;
+    height: 120%;
+  }
 }
